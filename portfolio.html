@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>portfolio</title>
+    <script src="09.js"></script>
+    <link rel="stylesheet" href="portfolio.css" />
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- Move to up button -->
+    <div class="scroll-button">
+      <a href="#home"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    <!-- navgaition menu -->
+    <nav>
+      <div class="navbar">
+        <div class="logo"><a href="#">Harshith's Portfolio.</a></div>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact"></a></li>
+          <div class="cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+        </ul>
+        <div class="media-icons">
+          <a href="https://linkedin.com/in/harshith-kurapati-812074276" class="fa-brands fa-linkedin"></a>
+          <a href="https://github.com/Hrshith77992"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.instagram.com/harshith_7979/"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+
+    <!-- Home Section Start -->
+    <!-- Home Section Start -->
+<section class="home" id="home">
+  <div class="home-content">
+    <div class="left">
+      <div class="text">
+        <div class="text-one">Hello,</div>
+        <div class="text-two">I'm Kurapati Harshith</div>
+        <div class="text-three">Web Developer</div>
+        <div class="text-four" id="text-four">B.Tech Information Technology Student</div>
+        <div class="text-five" id="text-five"></div>
+      </div>
+      <div class="button">
+        <button onclick="printMessage()">Contact Me</button>
+      </div>
+    </div>
+
+<script>
+  function printMessage() {
+    var element = document.getElementById('text-five');
+    
+    // Change the text to an email link
+    element.innerHTML = 'Mail: <a href="mailto:harshith77992@gmail.com">harshith77992@gmail.com</a><br> Phone No: 8247253976';
+    
+    // Set position to absolute
+    element.style.position = 'absolute';
+    
+    // Center the text inside its parent (can adjust according to where you want it)
+    element.style.top = '75%';
+    element.style.left = '15%';
+    
+    // Use transform to center the element properly
+    element.style.transform = 'translate(-50%, -50%)';
+  }
+</script>
+    <div class="right">
+      <img src="WhatsApp_Image_2024-09-22_at_20.27.38_b01a6d1e-removebg-preview.png" alt="My Image" />
+    </div>
+  </div>
+</section>
+
+
+    <!-- About Section Start -->
+    <section class="about" id="about">
+      <div class="content">
+        <div class="title"><span>About Me</span></div>
+        <div class="about-details">
+          <div class="right">
+            
+            <p>
+              Hi, I'm Kurapati Harshith, a passionate web developer and a B.Tech Information Technology student.
+              I specialize in creating dynamic and beautiful web pages using modern technologies. 
+              With a keen eye for design and a deep understanding of web development, I strive to build web experiences that are functional, user-friendly, and visually appealing.
+          </p>
+            <p>
+              I'm currently pursuing my degree at MallaReddy college of Engineering And Technology, where I've been honing my skills in various programming languages, frameworks, and tools. 
+              I'm always looking for opportunities to learn new things and improve my craft.
+            </p>
+            <div class="button">
+              <button>Download CV</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Skill Section Start -->
+    <!-- Section Tag and Other Div will same where we need to put same CSS -->
+    <section class="skills" id="skills">
+      <div class="content">
+        <div class="title"><span>My Skills</span></div>
+        <div class="skills-details">
+          <div class="text">
+            <div class="topic">Skills Reflects Our Knowledge</div>
+            <p>As a dedicated student in Information Technology, I have engaged in various 
+              self-directed projects that have allowed me to apply my programming skills and
+              deepen my understanding of web development. Through these projects, I have gained
+               hands-on experience with technologies such as Python, HTML, CSS, and JavaScript.
+
+              I have also collaborated with peers on group assignments, enhancing my teamwork 
+              and problem-solving skills. These experiences have prepared me for future professional 
+              opportunities, and I am eager to continue learning and growing in the field.
+
+              I completed the Angular Web Developer certification from Infosys, where I learned the 
+              fundamentals of building dynamic web applications using Angular. This program equipped me
+               with essential skills in component-based architecture, service integration, and reactive
+                programming, preparing me for real-world development challenges.
+            </p>
+            <div class="experience">
+            </div>
+          </div>
+          <div class="boxes">
+            <div class="box">
+              <div class="topic">HTML</div>
+              <div class="per">Mysql</div>
+            </div>
+            <div class="box">
+              <div class="topic">CSS</div>
+              <div class="per">TypeSCript</div>
+            </div>
+            <div class="box">
+              <div class="topic">JavScript</div>
+              <div class="per">DBMS</div>
+            </div>
+            <div class="box">
+              <div class="topic">python</div>
+              <div class="per">Java</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Me section Start -->
+    <section class="contact" id="contact">
+      <div class="content">
+        <div class="title"><span>Contact Me</span></div>
+        <div class="text">
+          <div class="topic">Email - </div>
+          <p>harshith77992@gmail.com</p>
+          <br>
+          <div class="topic">
+          <a herf="https://github.com/Hrshith77992" target="_blank">Github</a>
+          <a herf="www.linkedin.com/in/harshith-kurapati-812074276" target="_blank">Linkedin</a>
+          <a herf="#" target="_blank">Instagram</a>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section Start -->
+    <footer>
+      <div class="text">
+        <span>Created By Kurapati Harshith &#169; 2024 All Rights Reserved</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
